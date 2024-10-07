@@ -60,9 +60,9 @@ a:hover{
 }
 /* 導覽列 */
 .navigation ul {
-    background:#929292; /* 導覽列背景色*/ 
+    background:#bfbaba; /* 導覽列背景色*/ 
     margin: 0;          /* 外部距離設為0*/ 
-    padding: 10px;       /* 內距，內部距離設為10px*/ 
+    padding: 15px;       /* 內距，內部距離設為10px*/ 
     text-align: center; /* 文字居中對齊*/ 
 }
 .navigation ul li {
