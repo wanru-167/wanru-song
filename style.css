@@ -9,11 +9,28 @@ body{
 	text-align: center;  /*文字居中對齊*/
 	-webkit-text-size-adjust: 100%;   
 }       /*文字大小會達到易讀的大小，但是不會修改佈局*/
+.shape-ex1{
+    width: 150px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: all .3s linear;
+}
+.shape-ex1:hover{
+    background-color: #000;
+    color: #fff;
+}
 
 /* 區塊設定 */
 header{
 	background:#a62543;  /* 背景色*/ 
 	padding-top: 10px;   /* 內距-上方，上方內部距離為10px*/ 
+	transition: background-color 0.3s ease;
 }
 main{
 	
@@ -27,7 +44,8 @@ main{
 	line-height: 2em;   /* 行間設為2個字高*/ 
 	color:#464C4F; 
    }   /* 文字顏色設定*/
-
+   
+   
 footer{
 	background:#a62552;/* 背景色*/
 	padding: 10px;     /* 內距，內部距離設為10px*/ 
@@ -79,4 +97,36 @@ a:hover{
     color: #62d5e8;              /* 導覽列超連結『滑鼠滑過』文字顏色設定*/ 
     text-decoration: underline;
 }/* 導覽列超連結『滑鼠滑過』文字有底線裝飾效果*/
- 
+
+h1 {
+    animation-duration: 3s;
+    animation-name: slideInUp;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h4{
+	animation-duration: 2s;
+	animation-name: leftIn 
+	
+	}
+
+	@keyframes  leftIn {
+		from {
+			transform: translateX(-100%); /* 起始位置在螢幕外的左邊 */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* 最終位置移動到正常顯示位置 */
+        opacity: 1;
+		}
+	}
